@@ -1,0 +1,210 @@
+var a=10;
+undefined
+typeof a;
+"number"
+var b=new Number(1000);
+undefined
+b;
+Number {1000}
+typeof b;
+"object"
+typeof Number;
+"function"
+var q="Hello";
+undefined
+typeof q;
+"string"
+var w1=new String("Hello");
+undefined
+var t="Hello";
+undefined
+typeof t;
+"string"
+typeof w1;
+"object"
+t.toUpperCase();
+"HELLO"
+var x=new Number(10);
+undefined
+typeof x;
+"object"
+x;
+Number {10}
+x++;
+10
+x;
+11
+true
+true
+true+true;
+2
+var q=100;
+undefined
+typeof q;
+"number"
+var e="Two";
+undefined
+var g=q-e;
+undefined
+g;
+NaN
+isNaN(g);
+true
+isNaN(g)?0:g;
+0
+10+"10";
+"1010"
+10+parseInt("10");
+20
+parseFloat("1090.20");
+1090.2
+typeof parseFloat;
+"function"
+typeof parseInt;
+"function"
+typeof parseInt();
+"number"
+var t=100/0;
+undefined
+t;
+Infinity
+isFinite(t);
+false
+isFinite(t)?a:0;
+0
+isFinite(t)?t:0;
+0
+typeof t;
+"number"
+function add(){
+console.log("Add");
+}
+undefined
+typeof add;
+"function"
+add();
+VM1073:2 Add
+undefined
+add(10,20);
+VM1073:2 Add
+undefined
+add("Hello",true,10);
+VM1073:2 Add
+undefined
+console.log("A is ");
+VM1186:1 A is 
+undefined
+console.log("A
+VM1221:1 Uncaught SyntaxError: Invalid or unexpected token
+console.log("A is",10);
+VM1243:1 A is 10
+undefined
+console.log(10,"A is");
+VM1266:1 10 "A is"
+undefined
+console.log(10,"is A");
+VM1272:1 10 "is A"
+undefined
+console.log("A is",10,"B is",20);
+VM1333:1 A is 10 B is 20
+undefined
+console.log(10,"is A",20,"is B");
+VM1402:1 10 "is A" 20 "is B"
+undefined
+var add=function(){
+console.log("I am Function Expression or Anonymous Function");
+}
+undefined
+var ee=100;
+undefined
+typeof add;
+"function"
+add;
+ƒ (){
+console.log("I am Function Expression or Anonymous Function");
+}
+function calc(){
+function add(){
+}
+}
+undefined
+function calc(){
+var add=function(x,y){
+ return x+y;
+}
+var sub=function(x,y){
+ return x-y;
+console.log(add(10,20));
+console.log(sub(100,200));
+}
+}
+
+
+undefined
+calc();
+undefined
+function calc(){
+var add=function(x,y){
+ return x+y;
+}
+var sub=function(x,y){
+ return x-y;
+}
+console.log(add(10,20));
+console.log(sub(100,200));
+}
+
+
+
+undefined
+calc();
+VM1829:8 30
+VM1829:9 -100
+undefined
+function calc(){
+var add=function(x,y){
+ return x+y;
+}
+var sub=function(x,y){
+ return x-y;
+}
+return [add,sub];
+// console.log(add(10,20));
+// console.log(sub(100,200));
+}
+
+
+
+undefined
+var e=calc();
+undefined
+e;
+(2) [ƒ, ƒ]0: ƒ (x,y)1: ƒ (x,y)length: 2__proto__: Array(0)
+e[0](1000,2000);
+3000
+e[1](1000,2000);
+-1000
+var y=e[0];
+undefined
+y;
+ƒ (x,y){
+ return x+y;
+}
+var y=e[1];
+undefined
+y;
+ƒ (x,y){
+ return x-y;
+}
+y(10,20);
+-10
+var y=e[0];
+undefined
+y;
+ƒ (x,y){
+ return x+y;
+}
+y(10,20);
+30
+typeof (x,y);
+"function"
